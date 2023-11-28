@@ -47,7 +47,7 @@ class Node:
 
         # Default color is white
         node_color = (0, 0, 255)
-        intensity = min(255, users_waiting * 20)
+        intensity = min(255, users_waiting * 5)
         node_color = (intensity, 0, 255-intensity)
 
         radius = RADIUS * (1+users_waiting/10)
